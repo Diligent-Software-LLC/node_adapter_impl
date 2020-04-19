@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.1.1, 2020-04-19
+
+### Added
+
+### Edited
+
+### Fixed
+
+- Dependencies. The Node implementation package is the dependency.
+
 ## v0.1.0, 2020-04-19
 
 ### Added
