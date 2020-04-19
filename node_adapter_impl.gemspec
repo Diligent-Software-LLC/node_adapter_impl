@@ -43,11 +43,9 @@ appreciated.}
   # Development and testing dependencies.
   spec.add_development_dependency 'bundler', '~> 2.1'
   spec.add_development_dependency 'simplecov', '~> 0.17'
-  spec.add_development_dependency 'node_adapter_int', '~> 0'
   spec.add_development_dependency 'node', '~> 4'
 
   # Gem specific runtime dependencies.
-  spec.add_runtime_dependency 'node_adapter_int', '~> 0'
   spec.add_runtime_dependency 'node', '~> 4'
 
 end

@@ -285,38 +285,42 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="440" y="175" key="#Servers/0.23.1680.975@0.23.1680.975" timestamp="1587301362075" />
-    <state x="122" y="112" width="1395" height="795" key="CommitChangelistDialog2" timestamp="1587319063597">
+    <state x="122" y="112" width="1395" height="795" key="CommitChangelistDialog2" timestamp="1587319321296">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="122" y="112" width="1395" height="795" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1587319063597" />
-    <state width="1588" height="270" key="GridCell.Tab.0.bottom" timestamp="1587318796306">
+    <state x="122" y="112" width="1395" height="795" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1587319321296" />
+    <state width="1588" height="270" key="GridCell.Tab.0.bottom" timestamp="1587319488636">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1588" height="270" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1587318796306" />
-    <state width="1588" height="270" key="GridCell.Tab.0.center" timestamp="1587318796305">
+    <state width="1588" height="270" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1587319488636" />
+    <state width="1588" height="270" key="GridCell.Tab.0.center" timestamp="1587319488634">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1588" height="270" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1587318796305" />
-    <state width="1588" height="270" key="GridCell.Tab.0.left" timestamp="1587318796304">
+    <state width="1588" height="270" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1587319488634" />
+    <state width="1588" height="270" key="GridCell.Tab.0.left" timestamp="1587319488634">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1588" height="270" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1587318796304" />
-    <state width="1588" height="270" key="GridCell.Tab.0.right" timestamp="1587318796306">
+    <state width="1588" height="270" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1587319488634" />
+    <state width="1588" height="270" key="GridCell.Tab.0.right" timestamp="1587319488635">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1588" height="270" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1587318796306" />
+    <state width="1588" height="270" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1587319488635" />
+    <state x="440" y="250" key="Vcs.Push.Dialog.v2" timestamp="1587319371900">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="440" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1587319371899" />
     <state x="432" y="235" width="816" height="550" key="find.popup" timestamp="1587302008290">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="432" y="235" width="816" height="550" key="find.popup/0.23.1680.975@0.23.1680.975" timestamp="1587302008290" />
-    <state x="505" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1587319199100">
+    <state x="505" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1587319498754">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="505" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1587319199100" />
+    <state x="505" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1587319498754" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/node_adapter_impl@test_init_x1.rcov" NAME="test_init_x1 Coverage Results" MODIFIED="1587318436572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="node_adapter_impl" />
-    <SUITE FILE_PATH="coverage/node_adapter_impl@NodeAdapterTest.rcov" NAME="NodeAdapterTest Coverage Results" MODIFIED="1587318788641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="node_adapter_impl" />
+    <SUITE FILE_PATH="coverage/node_adapter_impl@NodeAdapterTest.rcov" NAME="NodeAdapterTest Coverage Results" MODIFIED="1587319501629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="node_adapter_impl" />
     <SUITE FILE_PATH="coverage/node_adapter_impl@test_front_x2.rcov" NAME="test_front_x2 Coverage Results" MODIFIED="1587318661918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="node_adapter_impl" />
     <SUITE FILE_PATH="coverage/node_adapter_impl@test_init_x2.rcov" NAME="test_init_x2 Coverage Results" MODIFIED="1587318442828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="node_adapter_impl" />
     <SUITE FILE_PATH="coverage/node_adapter_impl@test_back_x2.rcov" NAME="test_back_x2 Coverage Results" MODIFIED="1587313326846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="node_adapter_impl" />
