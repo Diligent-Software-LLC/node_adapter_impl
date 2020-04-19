@@ -38,7 +38,6 @@
       <change beforePath="$PROJECT_DIR$/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Changelog.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/node_adapter_impl/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/node_adapter_impl/version.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_adapter_impl.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/node_adapter_impl.gemspec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +72,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.youtrack.notifications" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -255,7 +255,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587301244760</updated>
-      <workItem from="1587301251016" duration="10092000" />
+      <workItem from="1587301251016" duration="10173000" />
+      <workItem from="1587331524913" duration="270000" />
     </task>
     <task id="LOCAL-00001" summary="Setup Complete&#10;&#10;Added version YARDocumentation. Added Gem Specification. Added README.md.">
       <created>1587303575046</created>
@@ -292,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587320859716</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Prepare Deployment&#10;&#10;Fixed dependency bug.">
+      <created>1587321783222</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587321783223</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers>
       <YouTrack url="https://macbook-pro.local:8443">
         <option name="defaultSearch" value="project: Node Subsystem: Adapter Component: Implementation Sprints: 6 #{ Prepare Deployment} " />
@@ -308,7 +316,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -320,7 +330,8 @@
     <MESSAGE value="Prepare Deployment&#10;&#10;Updated Travis CI configuration and Changelog.md." />
     <MESSAGE value="Prepare Deployment&#10;&#10;Removed interface dependency." />
     <MESSAGE value="Prepare Deployment&#10;&#10;Fixed 'require' statement." />
-    <option name="LAST_COMMIT_MESSAGE" value="Prepare Deployment&#10;&#10;Fixed 'require' statement." />
+    <MESSAGE value="Prepare Deployment&#10;&#10;Fixed dependency bug." />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare Deployment&#10;&#10;Fixed dependency bug." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -328,30 +339,30 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="440" y="175" key="#Servers/0.23.1680.975@0.23.1680.975" timestamp="1587301362075" />
-    <state x="122" y="112" width="1395" height="795" key="CommitChangelistDialog2" timestamp="1587320859445">
+    <state x="122" y="112" width="1395" height="795" key="CommitChangelistDialog2" timestamp="1587321782747">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="122" y="112" width="1395" height="795" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1587320859445" />
-    <state width="1588" height="270" key="GridCell.Tab.0.bottom" timestamp="1587321704809">
+    <state x="122" y="112" width="1395" height="795" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1587321782747" />
+    <state width="1588" height="270" key="GridCell.Tab.0.bottom" timestamp="1587331717985">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1588" height="270" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1587321704809" />
-    <state width="1588" height="270" key="GridCell.Tab.0.center" timestamp="1587321704808">
+    <state width="1588" height="270" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1587331717985" />
+    <state width="1588" height="270" key="GridCell.Tab.0.center" timestamp="1587331717985">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1588" height="270" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1587321704808" />
-    <state width="1588" height="270" key="GridCell.Tab.0.left" timestamp="1587321704807">
+    <state width="1588" height="270" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1587331717985" />
+    <state width="1588" height="270" key="GridCell.Tab.0.left" timestamp="1587331717984">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1588" height="270" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1587321704807" />
-    <state width="1588" height="270" key="GridCell.Tab.0.right" timestamp="1587321704808">
+    <state width="1588" height="270" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1587331717984" />
+    <state width="1588" height="270" key="GridCell.Tab.0.right" timestamp="1587331717985">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1588" height="270" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1587321704808" />
-    <state x="440" y="250" key="Vcs.Push.Dialog.v2" timestamp="1587320990664">
+    <state width="1588" height="270" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1587331717985" />
+    <state x="440" y="250" key="Vcs.Push.Dialog.v2" timestamp="1587331785807">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="440" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1587320990664" />
+    <state x="440" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1587331785807" />
     <state x="432" y="235" width="816" height="550" key="find.popup" timestamp="1587302008290">
       <screen x="0" y="23" width="1680" height="975" />
     </state>

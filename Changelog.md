@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.1.2, 2020-04-19
+
+### Added
+
+### Edited
+
+### Fixed
+
+- 'require' statement bug.
+
 ## v0.1.1, 2020-04-19
 
 ### Added
