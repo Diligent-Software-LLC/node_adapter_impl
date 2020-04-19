@@ -1,7 +1,7 @@
 # Copyright (C) 2020 Diligent Software LLC. All rights reserved. Released
 # under the GNU General Public License, Version 3. Refer LICENSE.txt.
 
-require 'node_adapter_int'
+require 'node'
 
 # NodeAdapter.
 # @class_description
@@ -12,6 +12,6 @@ require 'node_adapter_int'
 #   A 'data' instance reference.
 # @attr front [Node, NilClass]
 #   A 'front' instance reference.
-class NodeAdapter < NodeAdapterInt
+class NodeAdapter < Node
   VERSION = '0.1.0'.freeze()
 end
