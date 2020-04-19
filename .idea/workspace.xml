@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BuildServerSettings">
-    <option name="LOGIN" value="" />
-    <option name="SERVER_URL" value="http://buildserver" />
+    <option name="LOGIN" value="admin" />
+    <option name="SERVER_URL" value="http://localhost:8111" />
     <option name="REMEMBER_ME" value="true" />
     <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
     <option name="INSPECTIONS_BUILD_TYPE_IDS" />
@@ -34,8 +34,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1947093-8a8e-49fc-9808-c201ab3e71f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/node_adapter_impl.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/node_adapter_impl.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +237,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587301244760</updated>
-      <workItem from="1587301251016" duration="7708000" />
+      <workItem from="1587301251016" duration="9193000" />
     </task>
     <task id="LOCAL-00001" summary="Setup Complete&#10;&#10;Added version YARDocumentation. Added Gem Specification. Added README.md.">
       <created>1587303575046</created>
@@ -252,7 +253,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587319064646</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Prepare Deployment&#10;&#10;Updated Travis CI configuration and Changelog.md.">
+      <created>1587319321596</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587319321596</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Prepare Deployment&#10;&#10;Removed interface dependency.">
+      <created>1587319529722</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587319529722</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers>
       <YouTrack url="https://macbook-pro.local:8443">
         <option name="defaultSearch" value="project: Node Subsystem: Adapter Component: Implementation Sprints: 6 #{ Prepare Deployment} " />
@@ -277,7 +292,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Setup Complete&#10;&#10;Added version YARDocumentation. Added Gem Specification. Added README.md." />
     <MESSAGE value="Development Complete&#10;&#10;Edited inheritance. NodeAdapter subclasses Node. Added 'back()', 'data()', 'front()', 'initialize(n = nil)', 'back=(n = nil)', 'data=(dti = nil)', and 'front=(n = nil)' methods. Added NodeAdapterTest class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Development Complete&#10;&#10;Edited inheritance. NodeAdapter subclasses Node. Added 'back()', 'data()', 'front()', 'initialize(n = nil)', 'back=(n = nil)', 'data=(dti = nil)', and 'front=(n = nil)' methods. Added NodeAdapterTest class." />
+    <MESSAGE value="Prepare Deployment&#10;&#10;Updated Travis CI configuration and Changelog.md." />
+    <MESSAGE value="Prepare Deployment&#10;&#10;Removed interface dependency." />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare Deployment&#10;&#10;Removed interface dependency." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -285,38 +302,38 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="440" y="175" key="#Servers/0.23.1680.975@0.23.1680.975" timestamp="1587301362075" />
-    <state x="122" y="112" width="1395" height="795" key="CommitChangelistDialog2" timestamp="1587319321296">
+    <state x="122" y="112" width="1395" height="795" key="CommitChangelistDialog2" timestamp="1587319529412">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="122" y="112" width="1395" height="795" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1587319321296" />
-    <state width="1588" height="270" key="GridCell.Tab.0.bottom" timestamp="1587319488636">
+    <state x="122" y="112" width="1395" height="795" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1587319529412" />
+    <state width="1588" height="270" key="GridCell.Tab.0.bottom" timestamp="1587319535087">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1588" height="270" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1587319488636" />
-    <state width="1588" height="270" key="GridCell.Tab.0.center" timestamp="1587319488634">
+    <state width="1588" height="270" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1587319535087" />
+    <state width="1588" height="270" key="GridCell.Tab.0.center" timestamp="1587319535086">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1588" height="270" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1587319488634" />
-    <state width="1588" height="270" key="GridCell.Tab.0.left" timestamp="1587319488634">
+    <state width="1588" height="270" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1587319535086" />
+    <state width="1588" height="270" key="GridCell.Tab.0.left" timestamp="1587319535084">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1588" height="270" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1587319488634" />
-    <state width="1588" height="270" key="GridCell.Tab.0.right" timestamp="1587319488635">
+    <state width="1588" height="270" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1587319535084" />
+    <state width="1588" height="270" key="GridCell.Tab.0.right" timestamp="1587319535087">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1588" height="270" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1587319488635" />
-    <state x="440" y="250" key="Vcs.Push.Dialog.v2" timestamp="1587319371900">
+    <state width="1588" height="270" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1587319535087" />
+    <state x="440" y="250" key="Vcs.Push.Dialog.v2" timestamp="1587319541939">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="440" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1587319371899" />
+    <state x="440" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1587319541939" />
     <state x="432" y="235" width="816" height="550" key="find.popup" timestamp="1587302008290">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="432" y="235" width="816" height="550" key="find.popup/0.23.1680.975@0.23.1680.975" timestamp="1587302008290" />
-    <state x="505" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1587319498754">
+    <state x="505" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1587320334145">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="505" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1587319498754" />
+    <state x="505" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1587320334145" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/node_adapter_impl@test_init_x1.rcov" NAME="test_init_x1 Coverage Results" MODIFIED="1587318436572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="node_adapter_impl" />
