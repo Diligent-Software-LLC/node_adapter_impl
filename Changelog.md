@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.1.3, 2020-04-20
+
+### Added
+
+### Edited
+
+### Fixed
+
+- Gem Specification. node_impl version results in infinite loop in node_impl
+ updates.
+
 ## v0.1.2, 2020-04-19
 
 ### Added

@@ -13,5 +13,5 @@ require 'node_impl'
 # @attr front [Node, NilClass]
 #   A 'front' instance reference.
 class NodeAdapter < Node
-  VERSION = '0.1.2'.freeze()
+  VERSION = '0.1.3'.freeze()
 end
