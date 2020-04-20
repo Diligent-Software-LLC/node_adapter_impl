@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.1.4, 2020-04-20
+
+### Added
+
+### Edited
+
+### Fixed
+
+- Gem Specification. Removed runtime dependency.
+
 ## v0.1.3, 2020-04-20
 
 ### Added

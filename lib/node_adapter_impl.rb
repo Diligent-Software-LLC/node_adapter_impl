@@ -50,8 +50,6 @@ class NodeAdapter < Node
   #   An adapting instance.
   # @return [NodeAdapter]
   #   The instantiation.
-  # @raise [ArgumentError]
-  #   In the case the argument's type is not Node.
   def initialize(n = nil)
 
     unless (n.instance_of?(Node))
