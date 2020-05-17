@@ -6,12 +6,12 @@ require 'node_impl'
 # NodeAdapter.
 # @class_description
 #   A NodeAdapter implementation. Implements the NodeAdapter interface.
-# @attr back [Node, NilCLass]
+# @attr back [Node, NilClass]
 #   A 'back' instance reference.
 # @attr data [DataType]
 #   A 'data' instance reference.
 # @attr front [Node, NilClass]
 #   A 'front' instance reference.
 class NodeAdapter < Node
-  VERSION = '0.1.4'.freeze()
+  VERSION = '0.2.0'.freeze()
 end

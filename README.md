@@ -4,15 +4,13 @@ A NodeAdapter implementation. Implements the NodeAdapter interface.
 
 ## Installation
 
-- Refer the Adapter Implementation 
-[Packages](https://docs.diligentsoftware.org/node-1/adapter/packages) page 
-section.
+- Refer Implementation's 
+[Packages](https://docs.diligentsoftware.org/node-1/adapter/packages#implementation).
 
 ## Documentation
 
-- Refer the 
-[Implementation](https://docs.diligentsoftware.org/node-1/adapter/implementation)
- homepage.
+- Refer Implementation's 
+[Homepage](https://docs.diligentsoftware.org/node-1/adapter/implementation).
 
 ## Contributing
 

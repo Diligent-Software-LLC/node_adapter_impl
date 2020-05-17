@@ -1,7 +1,8 @@
 PATH
   remote: .
   specs:
-    node_adapter_impl (0.1.4)
+    node_adapter_impl (0.2.0)
+      node_impl (~> 3)
 
 GEM
   remote: https://rubygems.org/
@@ -21,6 +22,7 @@ GEM
     data_structure_error (1.2.1)
     docile (1.3.2)
     minitest (5.14.0)
+    node_adapter_int (0.1.0)
     node_error (3.0.0)
       node_error_impl (~> 1.0.0)
       node_error_int (~> 1.0.0)
@@ -46,9 +48,9 @@ DEPENDENCIES
   bundler (~> 2.1)
   minitest (~> 5.0)
   node_adapter_impl!
-  node_impl (~> 3.2)
+  node_adapter_int (~> 0)
   rake (~> 13.0)
-  simplecov (~> 0.17)
+  simplecov (~> 0)
 
 BUNDLED WITH
    2.1.2

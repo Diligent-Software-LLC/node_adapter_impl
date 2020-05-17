@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name                  = "node_adapter_impl"
   spec.version               = NodeAdapter::VERSION
   spec.authors               = ["Diligent Software LLC"]
-  spec.email                 = ["diligentsoftwarellc@gmail.com"]
+  spec.email                 = ["contact@diligentsoftware.org"]
   spec.summary               = %q{A NodeAdapter implementation. Implements the
 NodeAdapter interface.}
   spec.description           = %q{A NodeAdapter implementation. Implements the
@@ -42,7 +42,10 @@ available at $1, $2, $4, $8, and $16. Greatly appreciated.}
 
   # Development and testing dependencies.
   spec.add_development_dependency 'bundler', '~> 2.1'
-  spec.add_development_dependency 'simplecov', '~> 0.17'
-  spec.add_development_dependency 'node_impl', '~> 3.2'
+  spec.add_development_dependency 'simplecov', '~> 0'
+  spec.add_development_dependency 'node_adapter_int', '~> 0'
+
+  # Runtime dependencies.
+  spec.add_runtime_dependency 'node_impl', '~> 3'
 
 end
