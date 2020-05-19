@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.2.0, 2020-05-19
+
+### Added
+
+- 'attach_back(n = nil)', 'attach_front(n = nil)', 'detach_back()', and 
+'detach_front()'.
+- Test coverage.
+
+### Edited
+
+- 'initialize(n = nil)' privacy. Was protected, now public.
+- Deleted 'data()' and 'data=(dti = nil)'.
+
+### Fixed
+
+- Gem Specification's email.
+
 ## v0.1.4, 2020-04-20
 
 ### Added

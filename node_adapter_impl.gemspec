@@ -45,6 +45,5 @@ available at $1, $2, $4, $8, and $16. Greatly appreciated.}
   spec.add_development_dependency 'simplecov', '~> 0'
   spec.add_development_dependency 'node_adapter_int', '~> 0'
   spec.add_development_dependency 'node', '~> 4'
-  # spec.add_development_dependency 'node', '~> 2'
 
 end

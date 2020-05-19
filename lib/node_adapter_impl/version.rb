@@ -1,12 +1,7 @@
 # Copyright (C) 2020 Diligent Software LLC. All rights reserved. Released
 # under the GNU General Public License, Version 3. Refer LICENSE.txt.
 
-# testing
-require 'node'
-require_relative '../../../node_impl/lib/node_impl'
-
-# Deployment
-# require 'node_impl'
+require 'node_impl'
 
 # NodeAdapter.
 # @class_description
