@@ -5,14 +5,16 @@ require_relative 'test_helper'
 #   Tests the NodeAdapter implementation.
 class NodeAdapterTest < Minitest::Test
 
-  # Constants
-  NILCLASS_DATA = nil
-  STRING_DATA   = 'test'
+  # Constants.
+  NILCLASS_I = nil
+  TEST_FLOAT = 3.14
+  TEST_SYMBOL = :test_symbol
 
   # test_conf_doc_f_ex().
   # @description
   #   The .travis.yml, CODE_OF_CONDUCT.md, Gemfile, LICENSE.txt, README.md,
-  #   and .yardopts files exist.
+  #   .yardopts, .gitignore, Changelog.md, CODE_OF_CONDUCT.md,
+  #   node_adapter_impl.gemspec, Gemfile.lock, and Rakefile files exist.
   def test_conf_doc_f_ex()
 
     assert_path_exists('.travis.yml')
@@ -21,6 +23,12 @@ class NodeAdapterTest < Minitest::Test
     assert_path_exists('LICENSE.txt')
     assert_path_exists('README.md')
     assert_path_exists('.yardopts')
+    assert_path_exists('.gitignore')
+    assert_path_exists('Changelog.md')
+    assert_path_exists('CODE_OF_CONDUCT.md')
+    assert_path_exists('node_adapter_impl.gemspec')
+    assert_path_exists('Gemfile.lock')
+    assert_path_exists('Rakefile')
 
   end
 
@@ -35,108 +43,17 @@ class NodeAdapterTest < Minitest::Test
   # @description
   #   Set fixtures.
   def setup()
-    @node = Node.new(NILCLASS_DATA, NILCLASS_DATA, NILCLASS_DATA)
+    @node = Node.new(NILCLASS_I, NILCLASS_I, NILCLASS_I)
+    @adapter = NodeAdapter.new(@node)
   end
 
-  # back()
-
-  # test_back_x1().
-  # @description
-  #   back is nil.
-  def test_back_x1()
-
-    n = Minitest::Mock.new()
-    n.expect(:back_ref, NILCLASS_DATA)
-    n.expect(:data_ref, NILCLASS_DATA)
-    n.expect(:front_ref, NILCLASS_DATA)
-    n.expect(:instance_of?, true, [Node])
-    n_a = NodeAdapter.new(n)
-    n.expect(:adapt, n_a)
-    n_a = n.adapt()
-    assert_same(NILCLASS_DATA, n_a.back())
-
-  end
-
-  # test_back_x2().
-  # @description
-  #   back is a Node instance.
-  def test_back_x2()
-
-    n = Minitest::Mock.new()
-    n.expect(:back_ref, @node)
-    n.expect(:data_ref, NILCLASS_DATA)
-    n.expect(:front_ref, NILCLASS_DATA)
-    n.expect(:instance_of?, true, [Node])
-    n_a = NodeAdapter.new(n)
-    n.expect(:adapt, n_a)
-    n_a = n.adapt()
-    assert_same(@node, n_a.back())
-
-  end
-
-  # front()
-
-  # test_front_x1().
-  # @description
-  #   front is nil.
-  def test_front_x1()
-
-    n = Minitest::Mock.new()
-    n.expect(:back_ref, NILCLASS_DATA)
-    n.expect(:data_ref, NILCLASS_DATA)
-    n.expect(:front_ref, NILCLASS_DATA)
-    n.expect(:instance_of?, true, [Node])
-    n_a = NodeAdapter.new(n)
-    n.expect(:adapt, n_a)
-    n_a = n.adapt()
-    assert_same(NILCLASS_DATA, n_a.front())
-
-  end
-
-  # test_front_x2().
-  # @description
-  #   front is a Node instance.
-  def test_front_x2()
-
-    n = Minitest::Mock.new()
-    n.expect(:back_ref, NILCLASS_DATA)
-    n.expect(:data_ref, NILCLASS_DATA)
-    n.expect(:front_ref, @node)
-    n.expect(:instance_of?, true, [Node])
-    n_a = NodeAdapter.new(n)
-    n.expect(:adapt, n_a)
-    n_a = n.adapt()
-    assert_same(@node, n_a.front())
-
-  end
-
-  # data()
-
-  # test_data_x().
-  # @description
-  #   The data reference.
-  def test_data_x()
-
-    n = Minitest::Mock.new()
-    n.expect(:back_ref, NILCLASS_DATA)
-    n.expect(:data_ref, STRING_DATA)
-    n.expect(:front_ref, NILCLASS_DATA)
-    n.expect(:instance_of?, true, [Node])
-    n_a = NodeAdapter.new(n)
-    n.expect(:adapt, n_a)
-    n_a = n.adapt()
-    assert_same(STRING_DATA, n_a.data())
-
-  end
-
-  # initialize(n = nil)
+  # initialize(n = nil).
 
   # test_init_x1().
   # @description
   #   A Node argument.
   def test_init_x1()
-    a_n = NodeAdapter.new(@node)
-    assert_same(NodeAdapter, a_n.class())
+    assert_equal(@adapter, @node)
   end
 
   # test_init_x2().
@@ -145,7 +62,201 @@ class NodeAdapterTest < Minitest::Test
   def test_init_x2()
 
     assert_raises(ArgumentError) {
-      NodeAdapter.new(STRING_DATA)
+      NodeAdapter.new(TEST_FLOAT)
+    }
+
+  end
+
+  # back().
+
+  # test_back_x1().
+  # @description
+  #   'back' is nil.
+  def test_back_x1()
+    assert_nil(@adapter.back())
+  end
+
+  # test_back_x2().
+  # @description
+  #   'back' is a Node instance.
+  def test_back_x2()
+
+    n = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
+    @adapter.attach_back(n)
+    assert_instance_of(Node, @adapter.back())
+
+  end
+
+  # front().
+
+  # test_front_x1().
+  # @description
+  #   'front' is nil.
+  def test_front_x1()
+    assert_nil(@adapter.front())
+  end
+
+  # test_front_x2().
+  # @description
+  #   'front' is a Node.
+  def test_front_x2()
+
+    n = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
+    @adapter.attach_front(n)
+    assert_instance_of(Node, @adapter.front())
+
+  end
+
+  # attach_back(n = nil).
+
+  # test_ab_x1().
+  # @description
+  #   A Node instance argument.
+  def test_ab_x1()
+
+    attachment = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
+    r = @adapter.attach_back(attachment)
+    assert_nil(r)
+    assert_predicate(@adapter, :pioneer)
+
+  end
+
+  # test_ab_x2().
+  # @description
+  #   No arguments. The method takes the default parameter.
+  def test_ab_x2()
+
+    assert_raises(ArgumentError, "#{nil} is not a Node instance.") {
+      @adapter.attach_back()
+    }
+
+  end
+
+  # test_ab_x3().
+  # @description
+  #   Any argument excluding Node or NilClass instances.
+  def test_ab_x3()
+
+    assert_raises(ArgumentError, "#{TEST_SYMBOL} is neither nil nor a Node
+instance.") {
+      @adapter.attach_back(TEST_SYMBOL)
+    }
+
+  end
+
+  # attach_front(n = nil).
+
+  # test_af_x1().
+  # @description
+  #   A Node argument.
+  def test_af_x1()
+
+    attachment = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
+    r = @adapter.attach_front(attachment)
+    assert_nil(r)
+    assert_predicate(@adapter, :base)
+
+  end
+
+  # test_af_x2().
+  # @description
+  #   A nil argument.
+  def test_af_x2()
+
+    attachment = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
+    r = @adapter.attach_front(attachment)
+    assert_nil(r)
+    assert_predicate(@adapter, :base)
+
+  end
+
+  # test_af_x3().
+  # @description
+  #   Any object excluding a Node or NilClass instance.
+  def test_af_x3()
+
+    assert_raises(ArgumentError, "#{TEST_SYMBOL} is neither nil nor a Node
+instance.") {
+      @adapter.attach_front(TEST_SYMBOL)
+    }
+
+  end
+
+  # detach_back().
+
+  # test_db_x1().
+  # @description
+  #   self's 'back' is nil.
+  def test_db_x1()
+
+    r = @adapter.detach_back()
+    assert_nil(r)
+    assert_predicate(@adapter, :lone)
+
+  end
+
+  # test_db_x2().
+  # @description
+  #   self's 'back' is a Node.
+  def test_db_x2()
+
+    node = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
+    @adapter.attach_back(node)
+    r = @adapter.detach_back()
+    assert_nil(r)
+    assert_predicate(@adapter, :lone)
+
+  end
+
+  # detach_front().
+
+  # test_df_x1().
+  # @description
+  #   A nil 'front'.
+  def test_df_x1()
+
+    r = @adapter.detach_front()
+    assert_nil(r)
+    assert_predicate(@adapter, :lone)
+
+  end
+
+  # test_df_x2().
+  # @description
+  #   'front' is a Node.
+  def test_df_x2()
+
+    attachment = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
+    r = @adapter.attach_front(attachment)
+    assert_nil(r)
+    assert_predicate(@adapter, :base)
+
+  end
+
+  # Private methods.
+
+  # back=(n = nil).
+
+  # test_bass_x1().
+  # @description
+  #   'back=(n = nil)' is private.
+  def test_bass_x1()
+
+    assert_raises(NameError) {
+      @adapter.back = nil
+    }
+
+  end
+
+  # front=(n = nil).
+
+  # test_fass_x1().
+  # @description
+  #   'front=(n = nil)' is private.
+  def test_fass_x1()
+
+    assert_raises(NameError) {
+      @adapter.front = nil
     }
 
   end
