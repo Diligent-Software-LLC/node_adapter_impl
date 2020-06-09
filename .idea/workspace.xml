@@ -35,7 +35,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a1947093-8a8e-49fc-9808-c201ab3e71f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/node_adapter_impl.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/node_adapter_impl.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/node_adapter_impl/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/node_adapter_impl/version.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +269,7 @@
       <workItem from="1590169560668" duration="653000" />
       <workItem from="1590597322189" duration="737000" />
       <workItem from="1590760241369" duration="3200000" />
-      <workItem from="1591653656761" duration="6004000" />
+      <workItem from="1591653656761" duration="6392000" />
     </task>
     <task id="LOCAL-00001" summary="Setup Complete&#10;&#10;Added version YARDocumentation. Added Gem Specification. Added README.md.">
       <created>1587303575046</created>
@@ -388,7 +390,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591722090576</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Prepare Deployment&#10;&#10;Updated Changelog.md.">
+      <created>1591723087744</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1591723087745</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Prepare Deployment&#10;&#10;Uncommented Node references.">
+      <created>1591723258742</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1591723258742</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers>
       <YouTrack url="https://macbook-pro.local:8443">
         <option name="defaultSearch" value="project: Node Subsystem: Adapter Component: Implementation Sprints: 9 State: {Prepare Deployment}" />
@@ -428,17 +444,19 @@
     <MESSAGE value="Prepare Deployment&#10;&#10;'require'd node_impl." />
     <MESSAGE value="Setup Complete&#10;&#10;Bumped Patch Version. Added node_comp, node_error, and data_library development dependencies. Added node_impl runtime dependency." />
     <MESSAGE value="Development Complete&#10;&#10;Temporarily commented Node references. Updated source documentation. Updated attach_back(n = nil) and attach_front(n = nil) error conditions. Updated tests. Updated Travis CI configuration. Bumped node_comp and node_error development dependencies. Deleted runtime dependencies. Added a FUNDING.yml file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Development Complete&#10;&#10;Temporarily commented Node references. Updated source documentation. Updated attach_back(n = nil) and attach_front(n = nil) error conditions. Updated tests. Updated Travis CI configuration. Bumped node_comp and node_error development dependencies. Deleted runtime dependencies. Added a FUNDING.yml file." />
+    <MESSAGE value="Prepare Deployment&#10;&#10;Updated Changelog.md." />
+    <MESSAGE value="Prepare Deployment&#10;&#10;Uncommented Node references." />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare Deployment&#10;&#10;Uncommented Node references." />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="175" key="#Servers" timestamp="1587301362075">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="440" y="175" key="#Servers/0.23.1680.975@0.23.1680.975" timestamp="1587301362075" />
-    <state x="72" y="48" width="1545" height="910" key="CommitChangelistDialog2" timestamp="1591723087136">
+    <state x="72" y="48" width="1545" height="910" key="CommitChangelistDialog2" timestamp="1591723258097">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="72" y="48" width="1545" height="910" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1591723087136" />
+    <state x="72" y="48" width="1545" height="910" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1591723258097" />
     <state width="1564" height="270" key="GridCell.Tab.0.bottom" timestamp="1591721763041">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
@@ -487,10 +505,10 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state width="1549" height="335" key="GridCell.Tab.2.right/0.23.1680.975@0.23.1680.975" timestamp="1589976435921" />
-    <state x="440" y="250" key="Vcs.Push.Dialog.v2" timestamp="1591723126234">
+    <state x="440" y="250" key="Vcs.Push.Dialog.v2" timestamp="1591723261880">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="440" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1591723126234" />
+    <state x="440" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1591723261880" />
     <state x="432" y="235" width="816" height="550" key="find.popup" timestamp="1587302008290">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
