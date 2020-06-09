@@ -1,5 +1,20 @@
 # Changelog
 
+## v1.0.0, 2020-06-09
+
+### Added
+
+- data_library development dependency.
+- A FUNDING.yml file.
+
+### Edited
+
+- Updated source documentation, 'attach_back(n = nil)' and 'attach_front(n
+ = nil)' error conditions, tests, and Travis CI configuration.
+- Bumped node_comp and node_error development dependencies.
+
+### Fixed
+
 ## v0.2.0, 2020-05-19
 
 ### Added
