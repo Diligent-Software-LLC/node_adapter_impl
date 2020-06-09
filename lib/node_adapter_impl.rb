@@ -6,13 +6,13 @@ require_relative 'node_adapter_impl/version'
 # NodeAdapter.
 # @class_description
 #   A NodeAdapter implementation. Implements the NodeAdapter interface.
-# @attr back [Node, NilClass]
+# @attr back [NodeAdapter, NilClass]
 #   A backward reference.
 # @attr data [DataType]
 #   A data instance reference.
-# @attr front [Node, NilClass]
+# @attr front [NodeAdapter, NilClass]
 #   A forward reference.
-class NodeAdapter < Node
+class NodeAdapter #< Node
 
   # initialize(n = nil).
   # @description
@@ -40,7 +40,7 @@ class NodeAdapter < Node
   # back().
   # @description
   #   Gets back's reference.
-  # @return [Node, NilClass]
+  # @return [NodeAdapter, NilClass]
   #   back's reference.
   def back()
     return @back
@@ -49,7 +49,7 @@ class NodeAdapter < Node
   # front().
   # @description
   #   Gets front's reference.
-  # @return [Node, NilClass]
+  # @return [NodeAdapter, NilClass]
   #   front's reference.
   def front()
     return @front
@@ -57,17 +57,17 @@ class NodeAdapter < Node
 
   # attach_back(n = nil).
   # @description
-  #   Attaches 'back' a Node.
-  # @param n [Node]
-  #   An attachment Node.
+  #   Attaches 'back' a NodeAdapter.
+  # @param n [NodeAdapter]
+  #   An attachment NodeAdapter.
   # @return [NilClass]
   #   nil.
   # @raise [ArgumentError]
-  #   In the case the argument is any type other than Node.
+  #   In the case the argument is any type other than NodeAdapter.
   def attach_back(n = nil)
 
-    unless (n.instance_of?(Node))
-      raise(ArgumentError, "#{n} is not a Node instance.")
+    unless (n.instance_of?(NodeAdapter))
+      raise(ArgumentError, "#{n} is not a NodeAdapter instance.")
     else
       self.back = n
       return nil
@@ -77,17 +77,17 @@ class NodeAdapter < Node
 
   # attach_front(n = nil).
   # @description
-  #   Attaches 'front' the argument Node.
-  # @param n [Node]
+  #   Attaches 'front' the argument NodeAdapter.
+  # @param n [NodeAdapter]
   #   The attachment.
   # @return [NilClass]
   #   nil.
   # @raise [ArgumentError]
-  #   In the case the argument is any type other than Node.
+  #   In the case the argument is any type other than NodeAdapter.
   def attach_front(n = nil)
 
-    unless (n.instance_of?(Node))
-      raise(ArgumentError, "#{n} is not a Node instance.")
+    unless (n.instance_of?(NodeAdapter))
+      raise(ArgumentError, "#{n} is not a NodeAdapter instance.")
     else
       self.front = n
       return nil
@@ -118,9 +118,9 @@ class NodeAdapter < Node
   # back=(n = nil).
   # @description
   #   Sets back's reference.
-  # @param n [Node, NilClass]
+  # @param n [NodeAdapter, NilClass]
   #   back's setting.
-  # @return [Node, NilClass]
+  # @return [NodeAdapter, NilClass]
   #   The argument.
   def back=(n = nil)
     @back = n
@@ -129,9 +129,9 @@ class NodeAdapter < Node
   # front=(n = nil).
   # @description
   #   Sets front's reference.
-  # @param n [Node, NilClass]
+  # @param n [NodeAdapter, NilClass]
   #   front's setting.
-  # @return [Node, NilClass]
+  # @return [NodeAdapter, NilClass]
   #   The argument.
   def front=(n = nil)
     @front = n

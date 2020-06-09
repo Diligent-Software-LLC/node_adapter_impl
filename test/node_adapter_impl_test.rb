@@ -43,8 +43,11 @@ class NodeAdapterTest < Minitest::Test
   # @description
   #   Set fixtures.
   def setup()
-    @node = Node.new(NILCLASS_I, NILCLASS_I, NILCLASS_I)
-    @adapter = NodeAdapter.new(@node)
+
+    @node1 = Node.new(NILCLASS_I, NILCLASS_I, NILCLASS_I)
+    @node2 = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
+    @adapter = NodeAdapter.new(@node1)
+
   end
 
   # initialize(n = nil).
@@ -53,7 +56,7 @@ class NodeAdapterTest < Minitest::Test
   # @description
   #   A Node argument.
   def test_init_x1()
-    assert_equal(@adapter, @node)
+    assert_equal(@adapter, @node1)
   end
 
   # test_init_x2().
@@ -78,12 +81,12 @@ class NodeAdapterTest < Minitest::Test
 
   # test_back_x2().
   # @description
-  #   'back' is a Node instance.
+  #   'back' is a NodeAdapter instance.
   def test_back_x2()
 
-    n = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
+    n = NodeAdapter.new(@node2)
     @adapter.attach_back(n)
-    assert_instance_of(Node, @adapter.back())
+    assert_instance_of(NodeAdapter, @adapter.back())
 
   end
 
@@ -98,12 +101,12 @@ class NodeAdapterTest < Minitest::Test
 
   # test_front_x2().
   # @description
-  #   'front' is a Node.
+  #   'front' is a NodeAdapter.
   def test_front_x2()
 
-    n = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
+    n = NodeAdapter.new(@node2)
     @adapter.attach_front(n)
-    assert_instance_of(Node, @adapter.front())
+    assert_instance_of(NodeAdapter, @adapter.front())
 
   end
 
@@ -111,10 +114,10 @@ class NodeAdapterTest < Minitest::Test
 
   # test_ab_x1().
   # @description
-  #   A Node instance argument.
+  #   A NodeAdapter instance argument.
   def test_ab_x1()
 
-    attachment = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
+    attachment = NodeAdapter.new(@node2)
     r = @adapter.attach_back(attachment)
     assert_nil(r)
     assert_predicate(@adapter, :pioneer)
@@ -126,7 +129,7 @@ class NodeAdapterTest < Minitest::Test
   #   No arguments. The method takes the default parameter.
   def test_ab_x2()
 
-    assert_raises(ArgumentError, "#{nil} is not a Node instance.") {
+    assert_raises(ArgumentError, "#{nil} is not a NodeAdapter instance.") {
       @adapter.attach_back()
     }
 
@@ -134,10 +137,10 @@ class NodeAdapterTest < Minitest::Test
 
   # test_ab_x3().
   # @description
-  #   Any argument excluding Node or NilClass instances.
+  #   Any argument excluding NodeAdapter or NilClass instances.
   def test_ab_x3()
 
-    assert_raises(ArgumentError, "#{TEST_SYMBOL} is neither nil nor a Node
+    assert_raises(ArgumentError, "#{TEST_SYMBOL} is neither nil nor a NodeAdapter
 instance.") {
       @adapter.attach_back(TEST_SYMBOL)
     }
@@ -148,22 +151,21 @@ instance.") {
 
   # test_af_x1().
   # @description
-  #   A Node argument.
+  #   A nil argument.
   def test_af_x1()
 
-    attachment = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
-    r = @adapter.attach_front(attachment)
-    assert_nil(r)
-    assert_predicate(@adapter, :base)
+    assert_raises(ArgumentError, "#{nil} is not a NodeAdapter instance.") {
+      @adapter.attach_front()
+    }
 
   end
 
   # test_af_x2().
   # @description
-  #   A nil argument.
+  #   A NodeAdapter argument.
   def test_af_x2()
 
-    attachment = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
+    attachment = NodeAdapter.new(@node2)
     r = @adapter.attach_front(attachment)
     assert_nil(r)
     assert_predicate(@adapter, :base)
@@ -172,10 +174,10 @@ instance.") {
 
   # test_af_x3().
   # @description
-  #   Any object excluding a Node or NilClass instance.
+  #   Any object excluding a NodeAdapter or NilClass instance.
   def test_af_x3()
 
-    assert_raises(ArgumentError, "#{TEST_SYMBOL} is neither nil nor a Node
+    assert_raises(ArgumentError, "#{TEST_SYMBOL} is neither nil nor a NodeAdapter
 instance.") {
       @adapter.attach_front(TEST_SYMBOL)
     }
@@ -197,10 +199,10 @@ instance.") {
 
   # test_db_x2().
   # @description
-  #   self's 'back' is a Node.
+  #   self's 'back' is a NodeAdapter.
   def test_db_x2()
 
-    node = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
+    node = NodeAdapter.new(@node2)
     @adapter.attach_back(node)
     r = @adapter.detach_back()
     assert_nil(r)
@@ -223,10 +225,10 @@ instance.") {
 
   # test_df_x2().
   # @description
-  #   'front' is a Node.
+  #   'front' is a NodeAdapter.
   def test_df_x2()
 
-    attachment = Node.new(NILCLASS_I, TEST_SYMBOL, NILCLASS_I)
+    attachment = NodeAdapter.new(@node2)
     r = @adapter.attach_front(attachment)
     assert_nil(r)
     assert_predicate(@adapter, :base)
